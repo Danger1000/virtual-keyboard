@@ -1,0 +1,109 @@
+body{
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display:flex;
+    -webkit-box-orient:vertical;
+    -webkit-box-direction:normal;
+    -ms-flex-direction:column;
+    flex-direction:column;
+    -webkit-box-pack:center;
+    -ms-flex-pack:center;
+    justify-content:center;
+    -webkit-box-sizing:border-box;
+    box-sizing:border-box;
+    width:100vh;
+    margin:0 auto;
+}
+    
+.wrapper{
+    width:100%;
+    border:1px solid gray;
+    padding:20px;
+    border-radius:80px;
+}
+.textarea{
+    width:99.5%;
+    border:1px solid black;
+    border-radius: 60px;
+    margin-bottom:10px;
+    font-family:'Comic Sans MS', Courier, monospace;
+    font-weight:700;
+    font-size:30px;
+    color:#6876af;
+}
+
+.row{
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display:flex;
+    width:100%;
+    -webkit-box-pack:justify;
+    -ms-flex-pack:justify;
+    justify-content:space-between;
+    -webkit-box-align:center;
+    -ms-flex-align:center;
+    align-items:center;
+    margin-bottom:10px
+}
+
+.key{
+    width:70px;
+    height:40px;
+    font-family:'Comic Sans MS', Courier, monospace;
+    cursor:pointer;
+    text-align:center;
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display:flex;
+    -webkit-box-pack:center;
+    -ms-flex-pack:center;
+    justify-content:center;
+    -webkit-box-align:center;
+    -ms-flex-align:center;
+    align-items:center;
+    margin-right:7px;
+    border-radius:55px;
+    background-color:#6876af;
+}
+.keyText{
+    font-weight:700
+}
+
+.backspace,
+.caps,
+.enter,
+.shift,
+.tab{
+    width:100px
+}
+
+.del,.ctrl,.win,.alt,.alt-right,.ctrl-right,.fn,.command,.shift-right,.option{
+    width:84px
+}
+
+.space{
+    width:300px
+}
+
+.push{
+    background:-webkit-gradient(linear, left top, left bottom, from(gray), to(rgb(7, 181, 91)));
+    background:linear-gradient(gray(172, 168, 148), rgb(138, 120, 16)));
+    background-position:0 0;
+    border-radius:30px;
+    -webkit-animation:background 3s infinite alternate;
+    animation:background 3s infinite alternate}
+@-webkit-keyframes background{50%{background-position:0 200px}}
+@keyframes background{50%{background-position:0 200px}}
+
+.description{
+    width:30%;
+    height: 30px;
+    margin:0 72px -10px auto;
+    padding-top: 7px;
+    font-family:'Comic Sans MS', Courier, monospace;
+    text-align:center;
+    font-size: 18px;
+    border:2px dashed black;
+    border-radius: 35px;
+    color: #4e65bf;
+}
