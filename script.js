@@ -31,7 +31,7 @@ window.onload = function () {
       drawKeyboard() {
         document.body.insertAdjacentHTML("afterbegin",
           `
-          <div class="wrapper"><textarea id="console" class="textarea" rows="6"></textarea>
+          <div class="wrapper"><textarea id="console" class="textarea" rows="6">   </textarea>
   
           <div class="row">
   
@@ -92,7 +92,6 @@ window.onload = function () {
           </div>
   
           </div>
-  
   
           <div class="row">
   
@@ -333,7 +332,13 @@ window.onload = function () {
           allKeysCollection[i].innerHTML = this.russianKeys[i];
         }
       },
-  
+      capsPush() {
+        this.capsLock = !this.capsLock;
+        let allKeysCollection = document.getElementsByClassName('keyText');
+        for (const key of allKeysCollection) {
+          key.textContent = this.capsLock ? key.textContent.toUpperCase() : key.textContent.toLowerCase();
+        }
+      },
       print() {
   
         this.drawKeyboard();
